@@ -6,6 +6,9 @@ conda_pip.py
 Kludgy script to grab a package from pip, make a conda package out of it,
 build the conda packge, push it up to binstar, then install it.
 
+NOTE: most of this functionality is now being done with obvious-ci.
+      but I"m keeping the extra code around -- maybe it will be useful 
+
 This is helpful for making sure that all your packages are managed by conda
 
 NOTE: On Windows, you need the conda "patch" package for this to work:
@@ -148,8 +151,8 @@ def conda_config_as_dict():
 if __name__ == "__main__":
 
     print "Adding binstar channels"
-    add_binstar_channel("asmeurer")
-    add_binstar_channel(BINSTAR_USER)
+#    add_binstar_channel("asmeurer")
+#    add_binstar_channel(BINSTAR_USER)
 
     try:
         package = sys.argv[1]
@@ -176,9 +179,9 @@ if __name__ == "__main__":
         print "Attempting to build/install:", package
 
         build_conda_skeleton(package)
-        build_package(package)
-        install_package(package)
-        upload_package(package)
+#        build_package(package)
+#        install_package(package)
+#        upload_package(package)
 
 
 
