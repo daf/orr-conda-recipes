@@ -16,6 +16,10 @@ requirements:
   run:
     - python
 
+test:
+    imports:
+        - unit_conversion
+
 about:
   home: https://github.com/NOAA-ORR-ERD/PyNUCOS
   license: Public Domain

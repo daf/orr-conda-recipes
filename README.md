@@ -33,7 +33,7 @@ conda install obvious-ci
 
 git clone https://github.com/NOAA-ORR-ERD/orr-conda-recipes.git
 
-obvci_conda_build_dir.py ./conda-recipes NOAA-ORR-ERD --channel main
+obvci_conda_build_dir.py ./orr-conda-recipes NOAA-ORR-ERD --channel main
 ```
 
 The last command will build everything in the directory we just cloned against the `NOAA-ORR-ERD` channel.  It is highly recommended that you remove any other channel from your conda config (e.g.: `conda config --remove channels ChrisBarker -f`) to avoid conflicts. You may even want to setup a new miniconda environment to get a really clean system.
