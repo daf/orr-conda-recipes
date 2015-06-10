@@ -1,0 +1,24 @@
+package:
+  name: wxpython
+  version: !!str 3.0.2.0
+
+source:
+  fn: wxPython-src-3.0.2.0.tar.bz2
+  url: http://sourceforge.net/projects/wxpython/files/wxPython/3.0.2.0/wxPython-src-3.0.2.0.tar.bz2
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+
+
+about:
+  home: http://www.wxpython.org/
+  license: MIT License
+  summary: 'Python wrapper around the wxWidgets Cross platform Graphical User Interface library'
