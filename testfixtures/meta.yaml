@@ -1,0 +1,29 @@
+package:
+  name: testfixtures
+  version: "4.1.2"
+
+source:
+  fn: testfixtures-4.1.2.tar.gz 
+  url: https://pypi.python.org/packages/source/t/testfixtures/testfixtures-4.1.2.tar.gz 
+  md5: dc778269f70819ab44b7b3fa1ca64722
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+test:
+  # Python imports
+  imports:
+    - testfixtures
+
+about:
+  home: http://pythonhosted.org/testfixtures/
+  license: MIT License
+  summary: 'A collection of helpers and mock objects for unit tests and doc tests.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
