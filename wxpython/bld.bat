@@ -1,10 +1,5 @@
 :: LOTS more to do here!
 
-"%PYTHON%" setup.py install
-if errorlevel 1 exit 1
+cd wxPython
+$PYTHON build-wxpython.py --prefix=$PREFIX --build_dir=../bld  --install
 
-:: Add more build steps here, if they are necessary.
-
-:: See
-:: http://docs.continuum.io/conda/build.html
-:: for a list of environment variables that are set during the build process.
