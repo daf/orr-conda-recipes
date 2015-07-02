@@ -1,7 +1,7 @@
 # orr-conda-recipes
 Recipes for building conda packages for many (all?) of the third party packages required by ORR tools -- specifically GNOME
 
-This repo should give you all you need to build conda pacakges for various third party tools needed by py_gnome. IN theoery, these will be built by ORR developers, and provided on binstar in the NOAA-ORR-ERD channel. But you you want to build yourself, this is how to do it.
+This repo should give you all you need to build conda pacakges for various third party tools needed by py_gnome. In theory, these will be built by ORR developers, and provided on binstar in the NOAA-ORR-ERD channel. But you you want to build yourself, this is how to do it.
 
 # Geting set up
 
@@ -33,7 +33,7 @@ conda install obvious-ci
 
 git clone https://github.com/NOAA-ORR-ERD/orr-conda-recipes.git
 
-obvci_conda_build_dir.py ./conda-recipes NOAA-ORR-ERD --channel main
+obvci_conda_build_dir.py ./orr-conda-recipes NOAA-ORR-ERD --channel main
 ```
 
 The last command will build everything in the directory we just cloned against the `NOAA-ORR-ERD` channel.  It is highly recommended that you remove any other channel from your conda config (e.g.: `conda config --remove channels ChrisBarker -f`) to avoid conflicts. You may even want to setup a new miniconda environment to get a really clean system.
